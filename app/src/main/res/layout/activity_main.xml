@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEEE">
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="-10dp"
+
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:padding="-10dp"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowElevation="0dp"
+        app:neumorph_shapeType="basin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:src="@drawable/dhithilogo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/opensans_semicondensed_extrabold"
+                android:gravity="center_horizontal"
+                android:text="@string/covid_rti"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/opensans_semicondensed_medium"
+                android:gravity="center_horizontal"
+                android:text="@string/covid_19_rapid_testing_imaging"
+                android:textColor="#B5A7A7"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <soup.neumorphism.NeumorphImageView
+
+            style="@style/Widget.Neumorph.ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:scaleX="3"
+            android:scaleY="3"
+            android:src="@mipmap/ic_launcher_round"
+            app:neumorph_shadowColorDark="#EEE4C1C1"
+            app:neumorph_shadowColorLight="#E2F8ECEC"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shapeType="flat" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="80dp"
+            android:padding="0dp"
+            app:neumorph_shadowElevation="0dp"
+            app:neumorph_shapeType="pressed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="86dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:breakStrategy="high_quality"
+                    android:gravity="center_horizontal"
+                    android:maxLines="2"
+                    android:fontFamily="@font/patuaone_regular"
+                    android:text="@string/developed_and_powered_by"
+                    android:textColor="#B94E4E4E"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-20dp"
+                    android:src="@drawable/logo_adiuvo_edited" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:visibility="invisible"
+        android:id="@+id/splash_proceed_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#F76B6B"
+        android:elevation="2dp"
+        android:fontFamily="@font/opensans_semicondensed_medium"
+        android:text="GET STARTED"
+        android:textColor="@color/black" />
+
+
+
+    <TextView
+        android:visibility="invisible"
+        android:fontFamily="sans-serif-light"
+        android:textSize="12sp"
+        android:textColor="#DDDDDD"
+        android:id="@+id/terms_condition_text_view"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By pressing proceed you agree with our"/>
+
+
+
+
+</RelativeLayout>

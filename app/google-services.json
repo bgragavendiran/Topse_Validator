@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "18279912166",
+    "firebase_url": "https://dhithi-ohmics-e884a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dhithi-ohmics-e884a",
+    "storage_bucket": "dhithi-ohmics-e884a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18279912166:android:84f538a7bc901064332127",
+        "android_client_info": {
+          "package_name": "com.adiuvo.topse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18279912166-qedchilsfmgsk6928n6rs2l8fp0rtgo1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVWjG4L38MX3CpP1sg6AeCUlHp2C8uavQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18279912166-qedchilsfmgsk6928n6rs2l8fp0rtgo1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18279912166:android:8579ecb557a40a2d332127",
+        "android_client_info": {
+          "package_name": "com.adiuvo.topsevalidator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18279912166-qedchilsfmgsk6928n6rs2l8fp0rtgo1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVWjG4L38MX3CpP1sg6AeCUlHp2C8uavQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18279912166-qedchilsfmgsk6928n6rs2l8fp0rtgo1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

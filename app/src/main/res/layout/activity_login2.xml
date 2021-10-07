@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity2">
+
+    <soup.neumorphism.NeumorphCardView
+        app:neumorph_lightSource="leftTop"
+        android:id="@+id/pressed_card"
+        app:neumorph_shadowElevation="0.005dp"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview"
+        app:neumorph_shapeType="pressed" >
+        <soup.neumorphism.NeumorphImageView
+
+            style="@style/Widget.Neumorph.ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            android:layout_marginTop="28dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@mipmap/ic_launcher_round"
+            app:neumorph_shadowColorDark="#EEE4C1C1"
+            app:neumorph_shadowColorLight="#E2F8ECEC"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shapeType="flat" />
+        <soup.neumorphism.NeumorphCardView
+            android:layout_gravity="center_vertical"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_lightSource="rightBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shadowColorLight="@color/bgGray"
+            app:neumorph_shapeType="pressed"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <soup.neumorphism.NeumorphTextView
+                    android:id="@+id/textview"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginVertical="6dp"
+                    style="@style/Widget.Neumorph.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:text="Login"
+                    android:textColor="@color/background"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+
+                <LinearLayout
+
+                    android:id="@+id/awesome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp">
+
+                        <soup.neumorphism.NeumorphTextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email ID      "
+                            android:textSize="14dp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1" />
+
+
+                        <EditText
+                            android:id="@+id/mailId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:inputType="textEmailAddress"
+                            android:textColorHint="@color/bgGray"
+                            android:hint="user@adiuvodiagnostics.com"
+                            android:hyphenationFrequency="none"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textSize="14dp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp">
+
+                        <soup.neumorphism.NeumorphTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Password   "
+                            android:textSize="14dp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1" />
+
+                        <EditText
+                            android:id="@+id/Password"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:inputType="textPassword"
+                            android:padding="8dp"
+                            android:textSize="14dp" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:orientation="horizontal">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.0" />
+
+                        <soup.neumorphism.NeumorphButton
+                            style="@style/Widget.Neumorph.ImageButton"
+                            android:id="@+id/loginButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:fadingEdgeLength="12dp"
+                            android:gravity="center"
+                            android:text="Login"
+                            app:neumorph_lightSource="leftBottom"
+                            app:neumorph_shapeType="flat" />
+
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.0" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"/>
+
+</LinearLayout>
+
+

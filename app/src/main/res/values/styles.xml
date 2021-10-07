@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+
+    </style>
+    <style name="SplashStyleTop" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background_2</item>
+<!--        <item name="android:background">#ffffff</item>-->
+        <item name="android:gravity">center_horizontal</item>
+
+
+    </style>
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+
+    <style name="CustomShapeAppearance">
+        <![CDATA[<resources>     <style name="CustomShapeAppearance">         <item name="neumorph_cornerFamily">rounded</item>         <item name="neumorph_cornerSize">16dp</item>         <item name="neumorph_cornerSizeTopLeft">64dp</item>         <item name="neumorph_cornerSizeTopRight">64dp</item>     </style> </resources>]]></style>
+
+
+</resources>
