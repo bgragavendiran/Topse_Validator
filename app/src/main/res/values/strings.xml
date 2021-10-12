@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Validator CovidRTI</string>
+    <string name="app_name">Validator CovidRAT</string>
     <string name="my_report">My Report</string>
     <string name="permission_request">Grant Permission?</string>
     <string name="camera_error">Something went wrong in camera</string>
@@ -32,8 +32,8 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="covid_19_rapid_testing_imaging"><![CDATA[Covid-19 Rapid Testing & Imaging]]></string>
-    <string name="covid_rti">Covid RTI Validator</string>
+    <string name="covid_19_rapid_testing_imaging"><![CDATA[Covid-19 Rapid Antigen Testing]]></string>
+    <string name="covid_rti">Covid RAT Validator</string>
     <string name="developed_and_powered_by">Developed &amp; Powered by</string>
     <string name="female">Female</string>
     <string name="male">Male</string>

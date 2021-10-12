@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFEEEE">
+    android:background="#FFFFFF">
 
     <soup.neumorphism.NeumorphCardView
         android:layout_width="match_parent"
@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,7 +57,6 @@
         </LinearLayout>
 
 
-
         <soup.neumorphism.NeumorphImageView
 
             style="@style/Widget.Neumorph.ImageView"
@@ -69,8 +69,6 @@
             android:scaleX="3"
             android:scaleY="3"
             android:src="@mipmap/ic_launcher_round"
-            app:neumorph_shadowColorDark="#EEE4C1C1"
-            app:neumorph_shadowColorLight="#E2F8ECEC"
             app:neumorph_shadowElevation="6dp"
             app:neumorph_shapeType="flat" />
 
@@ -100,9 +98,9 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:breakStrategy="high_quality"
+                    android:fontFamily="@font/patuaone_regular"
                     android:gravity="center_horizontal"
                     android:maxLines="2"
-                    android:fontFamily="@font/patuaone_regular"
                     android:text="@string/developed_and_powered_by"
                     android:textColor="#B94E4E4E"
                     android:textSize="12sp" />
