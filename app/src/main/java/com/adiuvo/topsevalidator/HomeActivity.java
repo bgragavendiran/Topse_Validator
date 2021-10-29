@@ -44,6 +44,7 @@ public class HomeActivity extends AppCompatActivity {
     private VerifiedFragment verifiedFragment;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
+    AlertDialog alert;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,6 +65,7 @@ public class HomeActivity extends AppCompatActivity {
                             editor.apply();
                             editor.commit();
                             Toast.makeText(HomeActivity.this, "Current User Dr.Akhauri Yash Sinha", Toast.LENGTH_LONG).show();
+                            triggerSelected();
                             break;
                         case 1:
                             editor.putString("userName","Dr.Shalu Verma Kumar");
@@ -77,7 +79,7 @@ public class HomeActivity extends AppCompatActivity {
                 }
             });
 
-            AlertDialog alert = alertDialog.create();
+            alert = alertDialog.create();
             alert.setCanceledOnTouchOutside(true);
             alert.show();
         }
@@ -119,6 +121,13 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    private void triggerSelected() {
+        if(alert!=null){
+            if(alert.isShowing()){
+                alert.dismiss();
+            };
+        }
+    }
 
 
     private class ViewPagerAdapter extends FragmentPagerAdapter {

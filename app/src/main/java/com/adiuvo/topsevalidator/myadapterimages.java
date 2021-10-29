@@ -67,7 +67,12 @@ public class myadapterimages extends FirebaseRecyclerAdapter<modelImages,myadapt
     protected void onBindViewHolder(@NonNull myviewholder holder, int position, @NonNull modelImages model) {
         String date = "";
         Log.d(TAG, "myadapterimages: "+model.getSrfid());
-        holder.oprName.setText(model.getOperator().split(":")[0].replaceAll(" ","")+"   "+model.getOperator().split(":")[1].replaceAll(" ",""));
+        if(model.getOperator().split(":").length>1){
+            holder.oprName.setText(model.getOperator().split(":")[0].replaceAll(" ","")+"   "+model.getOperator().split(":")[1].replaceAll(" ",""));
+        }else{
+            holder.oprName.setText(model.getOperator());
+        }
+
         holder.reportStatus.setText(model.getVerification());
         try {
             Date date1=new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).parse(model.getDatetime());
@@ -121,7 +126,7 @@ public class myadapterimages extends FirebaseRecyclerAdapter<modelImages,myadapt
                         .setNegativeButton("Reject", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                verifiedImages ver=new verifiedImages(model.getUrl(), "Verified", model.getOperator(), model.getDatetime(), model.getSrfid(), model.getTreename(),userName );
+                                verifiedImages ver=new verifiedImages(model.getUrl(), "Rejected", model.getOperator(), model.getDatetime(), model.getSrfid(), model.getTreename(),userName );
                                 String mapChildLoc=(model.getTreename()).replace(model.srfid,"");
                                 mapChildLoc=mapChildLoc.replace(".pdf","");
 
@@ -208,7 +213,7 @@ public class myadapterimages extends FirebaseRecyclerAdapter<modelImages,myadapt
                         .setNegativeButton("Reject", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                verifiedImages ver=new verifiedImages(model.getUrl(), "Verified", model.getOperator(), model.getDatetime(), model.getSrfid(), model.getTreename(),userName );
+                                verifiedImages ver=new verifiedImages(model.getUrl(), "Rejected", model.getOperator(), model.getDatetime(), model.getSrfid(), model.getTreename(),userName );
                                 String mapChildLoc=(model.getTreename()).replace(model.srfid,"");
                                 mapChildLoc=mapChildLoc.replace(".pdf","");
 
